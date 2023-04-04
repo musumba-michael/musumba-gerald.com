@@ -13,7 +13,7 @@ export const PageTabs: FC<IPageTabs> = (props) => {
         variant="h6"
         noWrap
         component="div"
-        sx={{ marginRight: 2, display: { sm: "none", md: "block" } }}
+        sx={{ marginRight: 2, display: { xs: "none", md: "block" } }}
       >
         {name}
       </Typography>

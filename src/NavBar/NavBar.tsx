@@ -44,13 +44,13 @@ export const NavBar: FC<INavBar> = (props) => {
           edge="start"
           sx={{ mr: 2, ...(open && { display: "none" }) }}
         >
-          <MenuIcon sx={{ display: { sm: "block", md: "none" } }} />
+          <MenuIcon sx={{ display: { xs: "block", md: "none" } }} />
         </IconButton>
         <Typography
           variant="h6"
           noWrap
           component="div"
-          sx={{ display: { sm: "none", md: "block" } }}
+          sx={{ display: { xs: "none", md: "block" } }}
         >
           Musumba Gerald
         </Typography>
@@ -66,21 +66,21 @@ export const NavBar: FC<INavBar> = (props) => {
         <IconButton
           href="https://github.com/musumba-michael"
           target="_blank"
-          sx={{ display: { sm: "none", md: "block" } }}
+          sx={{ display: { xs: "none", md: "block" } }}
         >
           <GitHubIcon sx={{ color: "white" }} />
         </IconButton>
         <IconButton
           href="https://www.linkedin.com/in/musumba-gerald/"
           target="_blank"
-          sx={{ display: { sm: "none", md: "block" } }}
+          sx={{ display: { xs: "none", md: "block" } }}
         >
           <LinkedInIcon sx={{ color: "white" }} />
         </IconButton>
         <IconButton
           href="mailto:musumbagerald98@gmail.com"
           target="_blank"
-          sx={{ display: { sm: "none", md: "block" } }}
+          sx={{ display: { xs: "none", md: "block" } }}
         >
           <EmailIcon sx={{ color: "white" }} />
         </IconButton>
