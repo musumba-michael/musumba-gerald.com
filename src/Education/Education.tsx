@@ -12,7 +12,7 @@ export const Education = () => {
               secondary={
                 <>
                   <Typography variant="subtitle1">
-                    {course.schoolName}
+                    {course.schoolName} {"-"} {course.grade && course.grade}
                   </Typography>
                   <Typography variant="subtitle2">
                     {course.startDate}

@@ -23,6 +23,7 @@ export interface Education {
   course: string;
   startDate: string;
   endDate: string;
+  grade?: string;
 }
 
 export interface Projects {

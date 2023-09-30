@@ -139,11 +139,13 @@ export const EDUCATION: Education[] = [
     endDate: "December 2021",
     schoolName: "ISBAT University",
     startDate: "August 2018",
+    grade: "4.8/5.0",
   },
   {
     course: "Bachelor of Science in Software Engineering",
     endDate: "Febuary 2023",
     schoolName: "Makerere University",
     startDate: "August 2018",
+    grade: "4.10/5.0",
   },
 ];
