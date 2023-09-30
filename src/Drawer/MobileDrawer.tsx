@@ -64,7 +64,7 @@ export const MobileDrawer: FC<IMobileDrawer> = (props) => {
         <List>
           {PAGES.map((page) => {
             return (
-              <ListItem>
+              <ListItem key={page.id}>
                 <ListItemButton href={`#${page.id}`}>
                   <ListItemText primary={page.name} />
                 </ListItemButton>

@@ -15,7 +15,7 @@ export const WorkExperienceSlider: FC = () => {
         }}
       >
         {WORK_EXPERIENCE_LIST.map((workExpirience) => (
-          <Box>
+          <Box key={workExpirience.description}>
             <WorkExperienceItem workExpirience={workExpirience} />
           </Box>
         ))}

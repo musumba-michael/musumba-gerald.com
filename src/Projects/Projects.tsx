@@ -26,7 +26,7 @@ export const Projects: FC = () => {
         }}
       >
         {PROJECTS.map((project) => (
-          <Box>
+          <Box key={project.name}>
             <Card sx={{ width: 400, m: 1 }}>
               <CardContent sx={{ height: 150, overflowY: "auto" }}>
                 <Box sx={{ display: "flex" }}>
@@ -56,7 +56,12 @@ export const Projects: FC = () => {
               </CardContent>
               <CardActions>
                 {project.technologies.map((technology) => (
-                  <Chip label={technology} variant="filled" color="primary" />
+                  <Chip
+                    label={technology}
+                    variant="filled"
+                    color="primary"
+                    key={technology}
+                  />
                 ))}
               </CardActions>
             </Card>

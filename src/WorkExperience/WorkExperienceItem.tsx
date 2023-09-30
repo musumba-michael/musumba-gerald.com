@@ -35,7 +35,7 @@ export const WorkExperienceItem: FC<IWorkExperienceItem> = (props) => {
         <Typography>{workExpirience.description}</Typography>
         <ul>
           {workExpirience.whatIAccomplished.map((item) => (
-            <li>
+            <li key={item}>
               <Typography>{item}</Typography>
             </li>
           ))}
@@ -43,7 +43,12 @@ export const WorkExperienceItem: FC<IWorkExperienceItem> = (props) => {
       </CardContent>
       <CardActions>
         {workExpirience.technologies.map((technology) => (
-          <Chip label={technology} variant="filled" color="primary" />
+          <Chip
+            label={technology}
+            variant="filled"
+            color="primary"
+            key={technology}
+          />
         ))}
       </CardActions>
     </Card>
