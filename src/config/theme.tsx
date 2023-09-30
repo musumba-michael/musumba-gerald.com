@@ -19,5 +19,11 @@ export const theme = createTheme({
     },
     text: {},
   },
-  components: {},
+  components: {
+    MuiAppBar: {
+      defaultProps: {
+        color: "inherit",
+      },
+    },
+  },
 });
