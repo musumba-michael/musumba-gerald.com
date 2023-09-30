@@ -46,14 +46,6 @@ export const NavBar: FC<INavBar> = (props) => {
         >
           <MenuIcon sx={{ display: { xs: "block", md: "none" } }} />
         </IconButton>
-        <Typography
-          variant="h6"
-          noWrap
-          component="div"
-          sx={{ display: { xs: "none", md: "block" } }}
-        >
-          Musumba Gerald
-        </Typography>
         <Box sx={{ flexGrow: 1 }} />
         {PAGES.map((page) => {
           return (
@@ -68,21 +60,21 @@ export const NavBar: FC<INavBar> = (props) => {
           target="_blank"
           sx={{ display: { xs: "none", md: "block" } }}
         >
-          <GitHubIcon sx={{ color: "white" }} />
+          <GitHubIcon sx={{ color: "black" }} />
         </IconButton>
         <IconButton
           href="https://www.linkedin.com/in/musumba-gerald/"
           target="_blank"
           sx={{ display: { xs: "none", md: "block" } }}
         >
-          <LinkedInIcon sx={{ color: "white" }} />
+          <LinkedInIcon sx={{ color: "black" }} />
         </IconButton>
         <IconButton
           href="mailto:musumbagerald98@gmail.com"
           target="_blank"
           sx={{ display: { xs: "none", md: "block" } }}
         >
-          <EmailIcon sx={{ color: "white" }} />
+          <EmailIcon sx={{ color: "black" }} />
         </IconButton>
       </Toolbar>
     </AppBar>

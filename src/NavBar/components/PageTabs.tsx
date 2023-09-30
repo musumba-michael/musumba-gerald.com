@@ -8,7 +8,7 @@ export interface IPageTabs {
 export const PageTabs: FC<IPageTabs> = (props) => {
   const { name, id } = props;
   return (
-    <Link href={`#${id}`} sx={{ textDecoration: "none", color: "white" }}>
+    <Link href={`#${id}`} sx={{ textDecoration: "none", color: "black" }}>
       <Typography
         variant="h6"
         noWrap
