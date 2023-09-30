@@ -2,65 +2,67 @@ import {
   Box,
   Typography,
   Card,
-  Grid,
   CardContent,
   CardActions,
-  CardMedia,
-  Button,
   Chip,
+  IconButton,
+  Tooltip,
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { FC } from "react";
 import { PROJECTS } from "../config/constants";
+import { ShowImage } from "./ShowImage";
 export const Projects: FC = () => {
   return (
     <Box id="project" sx={{ marginTop: 5 }}>
       <Typography variant="h3">Projects</Typography>
-      <Grid container spacing={2} sx={{ marginTop: 1 }}>
+      <Box
+        sx={{
+          display: "flex",
+          width: "100%",
+          overflowX: "scroll",
+          overflowY: "hidden",
+        }}
+      >
         {PROJECTS.map((project) => (
-          <Grid item xs={12} md={4}>
-            <Card sx={{ maxWidth: 400, padding: 1 }}>
-              <CardMedia
-                component="img"
-                height="194"
-                image={project.image}
-                alt="screenshot"
-              />
-              <CardContent>
-                <Typography>{project.name}</Typography>
+          <Box>
+            <Card sx={{ width: 400, m: 1 }}>
+              <CardContent sx={{ height: 150, overflowY: "auto" }}>
+                <Box sx={{ display: "flex" }}>
+                  <Typography variant="h5">{project.name}</Typography>
+                  <Box flexGrow={1} />
+                  {project.websiteLink && (
+                    <Tooltip title="Visit Website">
+                      <IconButton
+                        onClick={() => window.open(`${project.websiteLink}`)}
+                      >
+                        <ArrowOutwardIcon />
+                      </IconButton>
+                    </Tooltip>
+                  )}
+                  {project.github && (
+                    <Tooltip title="View Github">
+                      <IconButton
+                        onClick={() => window.open(`${project.github}`)}
+                      >
+                        <GitHubIcon />
+                      </IconButton>
+                    </Tooltip>
+                  )}
+                  {project.image && <ShowImage image={project.image} />}
+                </Box>
                 <Typography>{project.description}</Typography>
               </CardContent>
-              {project.technologies.map((technology) => (
-                <Chip label={technology} variant="filled" color="primary" />
-              ))}
-              <CardActions disableSpacing>
-                <Box flexGrow={1} />
-                {project.websiteLink && (
-                  <Button
-                    aria-label="website"
-                    href={project.websiteLink}
-                    endIcon={<ArrowOutwardIcon />}
-                    color="secondary"
-                  >
-                    Website
-                  </Button>
-                )}
-                {project.github && (
-                  <Button
-                    aria-label="github"
-                    href={project.github}
-                    endIcon={<GitHubIcon />}
-                    color="secondary"
-                  >
-                    Github
-                  </Button>
-                )}
+              <CardActions>
+                {project.technologies.map((technology) => (
+                  <Chip label={technology} variant="filled" color="primary" />
+                ))}
               </CardActions>
             </Card>
-          </Grid>
+          </Box>
         ))}
-      </Grid>
+      </Box>
     </Box>
   );
 };
