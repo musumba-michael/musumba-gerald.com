@@ -1,10 +1,9 @@
 import { Box, Container, CssBaseline, styled } from "@mui/material";
 import { NavBar } from "../NavBar/NavBar";
 import { About } from "../About/About";
-import { WorkExperience } from "../WorkExperience/WorkExperience";
+import { WorkExperienceSlider } from "../WorkExperience/WorkExperience";
 import { Projects } from "../Projects/Projects";
 import { Education } from "../Education/Education";
-import { PublicationsAndTalks } from "../PublicationsAndTalks/PublicationsAndTalks";
 import { DrawerHeader, MobileDrawer } from "../Drawer/MobileDrawer";
 import { DRAWER_WIDTH } from "../config/constants";
 import { useState } from "react";
@@ -49,10 +48,9 @@ function App() {
           <DrawerHeader />
           <Container>
             <About />
-            <WorkExperience />
+            <WorkExperienceSlider />
             <Projects />
             <Education />
-            <PublicationsAndTalks />
           </Container>
         </Main>
       </Box>
