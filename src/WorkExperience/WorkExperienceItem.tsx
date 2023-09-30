@@ -15,7 +15,7 @@ export interface IWorkExperienceItem {
 export const WorkExperienceItem: FC<IWorkExperienceItem> = (props) => {
   const { workExpirience } = props;
   return (
-    <Card sx={{ maxWidth: 400, padding: 1 }}>
+    <Card sx={{ width: 400, m: 1 }}>
       <CardHeader
         title={workExpirience.jobRole}
         subheader={
@@ -31,8 +31,7 @@ export const WorkExperienceItem: FC<IWorkExperienceItem> = (props) => {
           </Box>
         }
       />
-      <Typography></Typography>
-      <CardContent>
+      <CardContent sx={{ height: 300, overflowY: "auto" }}>
         <Typography>{workExpirience.description}</Typography>
         <ul>
           {workExpirience.whatIAccomplished.map((item) => (
