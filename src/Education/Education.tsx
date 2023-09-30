@@ -1,11 +1,4 @@
-import {
-  Box,
-  List,
-  ListItem,
-  ListItemText,
-  Paper,
-  Typography,
-} from "@mui/material";
+import { Box, List, ListItem, Paper, Typography } from "@mui/material";
 import { EDUCATION } from "../config/constants";
 export const Education = () => {
   return (

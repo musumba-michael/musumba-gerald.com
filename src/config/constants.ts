@@ -16,7 +16,7 @@ export const WORK_EXPERIENCE_LIST: WorkExperience[] = [
       website: "https://www.color.com/",
     },
     description:
-      "I was a contractor at Color Health through Turing.com. Throught my time working there I was part of the precision care team that worked on building and mantaining the All Of Us platform and the genetic testing product.",
+      "I was a contractor at Color Health through Turing.com, I Served as a full stack software engineer for Colors precision care team that managed the All Of Us program and core genetic product.",
     endDate: "September 2023",
     isCurrentlyWorkingHere: false,
     jobRole: "Full Stack Software Engineer",
@@ -31,9 +31,10 @@ export const WORK_EXPERIENCE_LIST: WorkExperience[] = [
       "CircleCi",
     ],
     whatIAccomplished: [
-      "Developed and maintained full-stack web applications.",
-      "Collaborated with cross-functional teams to design and implement scalable and user-friendly software solutions.",
-      "Participated in code reviews, debugging, and troubleshooting to ensure high-quality and efficient code.",
+      "Built and maintained frontend applications for All Of US research program and Color’s genetic product.",
+      "Built and integrated  All Of US backend API’s with Color’s product while working with different teams that managed these products in the organization.",
+      "Participated in code reviews, debugging, testing and quality assurance session (Bugs Bash) to ensure high-quality and efficient code.",
+      "Worked with product managers, genetic counselors and fellow engineers to add new features and fix bugs.",
     ],
   },
   {
@@ -50,9 +51,10 @@ export const WORK_EXPERIENCE_LIST: WorkExperience[] = [
     startDate: "Jan 2022",
     technologies: ["React", "Django", "PostgreSql", "AWS"],
     whatIAccomplished: [
-      "Built and maintained SMS gateways used by different banking institutions in Uganda.",
-      "Build and maintained an API used for mobile money transactions",
-      "Configured and mantained AWS linux servers.",
+      "Maintained SMS gateways that directly connect to Airtel and MTN mobile networks in Uganda that are used by different banking institutions in Uganda.",
+      "Built and maintained an API used for mobile money transactions.",
+      "Configured, hardened and maintained AWS linux servers used by different banking institutions.",
+      "Built Applicationsto enable institutions to reach out their customers using WhatsApp api.",
     ],
   },
   {
@@ -65,15 +67,16 @@ export const WORK_EXPERIENCE_LIST: WorkExperience[] = [
       "At Asteriskint I was part of a cohort to develop a fintech application to enable money transfer from diaspora to family in africa.",
     endDate: "December 2021",
     isCurrentlyWorkingHere: false,
-    jobRole: "Full Stack Software Engineer",
+    jobRole: "Software Engineer",
     startDate: "August 2021",
     technologies: ["React", "Laravel", "MysqlSql", "Php", "Linux"],
     whatIAccomplished: [
       "Worked with cybersource payment Platform to enable Credit and Visa card transactions.",
       "Worked with different african mobile money api to enable money transfer to mobile number",
-      "Hosted and configured the linode server",
-      "Setup and managed self hosted git server",
-      "Setup and managed self host mail server",
+      "Built APi authentication using Laravel Sanctum and setup Twilio two factor authentication.",
+      "Built  and tested API rest endpoints using Laravel and Postman.",
+      "Managed and configured the linode server.",
+      "Setup and manage self hosted git and mail server.",
     ],
   },
   {
@@ -83,14 +86,15 @@ export const WORK_EXPERIENCE_LIST: WorkExperience[] = [
       website: "https://wimea-ict.net/",
     },
     description:
-      "Wimea-ict is an organisation at makerere university that uses technology to monitor weather in East Africa",
+      "Wimea-ict is a research organization at Makerere University that partners with different universities around the world to do research in fields relating to Agriculture.",
     endDate: "September 2021",
     isCurrentlyWorkingHere: false,
     jobRole: "Software Engineer Intern",
     startDate: "June 2021",
     technologies: ["React", "Django", "PostgreSql", "Linux"],
     whatIAccomplished: [
-      "Worked on adding new features to the web application that agregates data from the different Weather stations around the country.",
+      "Worked on adding new features to the web application that aggregates data from the different IOT devices at Weather stations around the country.",
+      "Worked with teammates to build AdEMNEA, a tool for insect pollinator monitoring.",
     ],
   },
 ];
@@ -117,7 +121,7 @@ export const PROJECTS: Projects[] = [
     description:
       "This tool was used to generate pdf reports for All Of Us participants",
     name: "All Of Us reports",
-    image: "/images/counseling.png",
+    image: "/images/aou-reports.png",
     isVisible: true,
     technologies: ["React", "Node"],
   },
@@ -125,7 +129,7 @@ export const PROJECTS: Projects[] = [
     description:
       "This tool was used to generate pdf reports for All Of Us participants",
     name: "This website",
-    image: "/images/counseling.png",
+    image: "/images/website.png",
     isVisible: true,
     technologies: ["React"],
     github: "https://github.com/musumba-michael/musumba-gerald.com",
