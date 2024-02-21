@@ -11,7 +11,13 @@ export const Education = () => {
               <Typography variant="h6">{course.course}</Typography>
               <Box>
                 <Typography variant="subtitle1" color="GrayText">
-                  {course.schoolName} {"-"} {course.grade && course.grade}
+                  {course.schoolName}{" "}
+                  {course.grade && (
+                    <>
+                      {"-"}
+                      {course.grade}
+                    </>
+                  )}
                 </Typography>
                 <Typography variant="subtitle2" color="GrayText">
                   {course.startDate}

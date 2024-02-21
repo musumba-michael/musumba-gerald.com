@@ -51,19 +51,12 @@ export const About: FC = () => {
             <Typography variant="h2">Software Engineer</Typography>
             <Box sx={{ height: theme.spacing(2) }} />
             <Typography variant="body1">
-              Hi There, am Musumba Gerald Michael, am a passionate software
-              engineer. My journey in tech started young, and I've since
-              mastered various languages and technologies. I thrive on solving
-              complex problems with clean, scalable solutions. Continual
-              learning keeps me sharp, and I love collaborating in diverse
-              teams.
-            </Typography>
-            <Box sx={{ height: theme.spacing(2) }} />
-            <Typography>
-              When not coding, I'm exploring the outdoors, reading novels, or
-              swimming at the pool. Welcome to my portfolio. Explore my work,
-              and let's chat about your next project. Connect with me on
-              [LinkedIn/GitHub/Email] for a chat.
+              Hi There, am Gerald Musumba. I am a passionate professional with a
+              focus on performance and security. With experience in both
+              healthcare and fintech sectors, I specialize in developing APIs,
+              as well as web and mobile applications. I am currently pursuing a
+              Master's degree in Information and Cyber Security at the
+              University of California, Berkeley School of Information.
             </Typography>
           </Box>
           <Box>

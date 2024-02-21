@@ -19,7 +19,7 @@ export const WORK_EXPERIENCE_LIST: WorkExperience[] = [
       "I was a contractor at Color Health through Turing.com, I Served as a full stack software engineer for Colors precision care team that managed the All Of Us program and core genetic product.",
     endDate: "September 2023",
     isCurrentlyWorkingHere: false,
-    jobRole: "Full Stack Software Engineer",
+    jobRole: "Software Engineer",
     startDate: "Aprill 2022",
     technologies: [
       "React",
@@ -31,10 +31,10 @@ export const WORK_EXPERIENCE_LIST: WorkExperience[] = [
       "CircleCi",
     ],
     whatIAccomplished: [
-      "Built and maintained frontend applications for All Of US research program and Color’s genetic product.",
-      "Built and integrated  All Of US backend API’s with Color’s product while working with different teams that managed these products in the organization.",
-      "Participated in code reviews, debugging, testing and quality assurance session (Bugs Bash) to ensure high-quality and efficient code.",
-      "Worked with product managers, genetic counselors and fellow engineers to add new features and fix bugs.",
+      'Developed and maintained front-end applications for the "All Of Us" research program and Color\'s genetic product. Utilized React, TypeScript, and Material-UI to enhance user engagement and experience.',
+      'Spearheaded backend development, creating REST APIs, and Django views, and overseeing data integration projects. Modified Django tables for seamless "All Of Us" report integration, optimizing Python scripts for large-scale data management and system performance.',
+      "Ensured code quality through rigorous reviews and proactive debugging. Actively participated in QA sessions to streamline development processes.",
+      "Collaborated with product managers, genetic counselors, fellow engineers, and cross-functional teams to introduce innovative features and implement crucial bug fixes, fostering a collaborative and results-driven environment.",
     ],
   },
   {
@@ -45,16 +45,17 @@ export const WORK_EXPERIENCE_LIST: WorkExperience[] = [
     },
     description:
       "Dmark mobile is a company that develops applications to enable bulk payments, mobile banking, mobile VAS and also carried out custom software development",
-    endDate: "July 2023",
+    endDate: "July 2022",
     isCurrentlyWorkingHere: false,
-    jobRole: "Full Stack Software Engineer",
+    jobRole: "Software Engineer",
     startDate: "Jan 2022",
     technologies: ["React", "Django", "PostgreSql", "AWS"],
     whatIAccomplished: [
-      "Maintained SMS gateways that directly connect to Airtel and MTN mobile networks in Uganda that are used by different banking institutions in Uganda.",
-      "Built and maintained an API used for mobile money transactions.",
-      "Configured, hardened and maintained AWS linux servers used by different banking institutions.",
-      "Built Applicationsto enable institutions to reach out their customers using WhatsApp api.",
+      "Developed applications for bulk payments, mobile banking, value-added services, and custom software solutions.",
+      "Managed SMS gateways, establishing direct connections with Airtel and MTN networks, vital for efficient communication with banking institutions.",
+      "Designed and maintained a secure API for mobile money transactions, ensuring seamless financial interactions.",
+      "Spearheaded the configuration, hardening, and ongoing maintenance of AWS Linux servers, tailored to the unique needs of various banking institutions.",
+      "Created innovative applications using the WhatsApp API to facilitate efficient customer engagement for institutions.",
     ],
   },
   {
@@ -71,12 +72,12 @@ export const WORK_EXPERIENCE_LIST: WorkExperience[] = [
     startDate: "August 2021",
     technologies: ["React", "Laravel", "MysqlSql", "Php", "Linux"],
     whatIAccomplished: [
-      "Worked with cybersource payment Platform to enable Credit and Visa card transactions.",
-      "Worked with different african mobile money api to enable money transfer to mobile number",
-      "Built APi authentication using Laravel Sanctum and setup Twilio two factor authentication.",
-      "Built  and tested API rest endpoints using Laravel and Postman.",
-      "Managed and configured the linode server.",
-      "Setup and manage self hosted git and mail server.",
+      "Developed a fintech application for simplified money transfers from the diaspora to African families.",
+      "Integrated the Cybersource payment platform for seamless Credit and Visa card transactions.",
+      "Implemented API authentication with Laravel Sanctum and Twilio two-factor authentication for enhanced security.",
+      "Designed and rigorously tested RESTful API endpoints using Laravel and Postman, ensuring robust functionality.",
+      "Collaborated with various African mobile money APIs to enable hassle-free transfers to mobile numbers.",
+      "Managed and configured Linode servers for optimal performance and reliability.",
     ],
   },
   {
@@ -93,8 +94,9 @@ export const WORK_EXPERIENCE_LIST: WorkExperience[] = [
     startDate: "June 2021",
     technologies: ["React", "Django", "PostgreSql", "Linux"],
     whatIAccomplished: [
-      "Worked on adding new features to the web application that aggregates data from the different IOT devices at Weather stations around the country.",
-      "Worked with teammates to build AdEMNEA, a tool for insect pollinator monitoring.",
+      "Collaborated with Wimea-ICT, a research organization at Makerere University, focusing on agriculture-related research with global university partnerships.",
+      "Enhanced a data aggregation web application for IoT devices at weather stations, introducing new features for improved data collection and analysis.",
+      "Contributed to the development of AdEMNEA, a specialized tool for insect pollinator monitoring, collaborating closely with fellow engineers.",
     ],
   },
 ];
@@ -139,11 +141,10 @@ export const PROJECTS: Projects[] = [
 
 export const EDUCATION: Education[] = [
   {
-    course: "Bachelor of Science in Networking and Cyber Security",
-    endDate: "December 2021",
-    schoolName: "ISBAT University",
-    startDate: "August 2018",
-    grade: "4.8/5.0",
+    course: "Masters of information and Cyber Security",
+    endDate: "December 2025",
+    schoolName: "University Of California, Berkeley",
+    startDate: "January 2024",
   },
   {
     course: "Bachelor of Science in Software Engineering",
@@ -151,5 +152,12 @@ export const EDUCATION: Education[] = [
     schoolName: "Makerere University",
     startDate: "August 2018",
     grade: "4.10/5.0",
+  },
+  {
+    course: "Bachelor of Science in Networking and Cyber Security",
+    endDate: "December 2021",
+    schoolName: "ISBAT University",
+    startDate: "August 2018",
+    grade: "4.8/5.0",
   },
 ];
