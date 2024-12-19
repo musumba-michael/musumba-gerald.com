@@ -13,15 +13,6 @@ import {
 
 const experiences: Experience[] = [
     {
-        company: "Turing",
-        position: "Python Developer - Contractor",
-        period: "Nov 2024 – present",
-        location: "Palo Alto, California",
-        description: [
-            "Trained large language models to write and fix bugs in python code.",
-        ],
-    },
-    {
         company: "University of California, Berkeley",
         position: "Graduate Student Researcher",
         period: "Feb 2024 – July 2024",
